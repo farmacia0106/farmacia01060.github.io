@@ -197,77 +197,133 @@ body {
 
 
 /* Formulario */
-
-.formu {
+.containerF{
     display: flex;
-    justify-content: center;
-}
-
-form {
-    padding: 50px 65px;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 450px;
-    background: #fff;
-}
-
-.input-group{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-h3{
-    color: rgb(0, 0, 0);
-    font-size: 35px;
-}
-
-label{
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-input, textarea{
-    padding: 17px 25px;
+    background-color: #fff;
+    height: 750px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
     border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: rgba(19, 145, 177, 0.267);
-    border: 2px solid azure ;
-    color: black;
+}
+
+.form{
+    padding: 30px 80px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.escribenos{
+    font-size: 45px;
+    color: #4844A9;
+}
+
+.escribenos02{
+    font-size: 16px;
+    color: #969EAE;
+    margin-bottom: 30px;
+}
+
+.label01{
+    font-size: 15px;
+    color: #969EAE;
+    margin-bottom: 500px;
+}
+
+.box{
+    border: 0;
+    background-color: #F4F4FD;
+    padding: 15PX;
+    border-radius: 25PX;
+    margin-bottom: 25PX;
     outline: none;
 }
 
-input::placeholder, textarea::placeholder{
-    color: rgb(119, 134, 146);
-}
-
-.form-txt{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.btn{
-    font-size: 15px;
-    color: azure;
+.submit{
+    background-color: #817ffe;
     border: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
     border-radius: 25px;
-    background-color: #18479e;
-    box-shadow: 0 0 20 rgba(25, 254, 0, 0.4);
+    width: 200px;
+    margin-top: 13px;
+    box-shadow: 0 0 20px rgba(201, 199, 253, 0.5);
+    align-items: center;
+}
+
+.submit:hover{
+    background-color: #4844A9;
+}
+
+.info{
+    padding: 50px;
+}
+
+.img-1{
+    width: 350px;
+    margin-bottom: 75px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.icons{
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.icons img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.escribenos03{
+    font-size: 14px;
+    color: #969EAE;
+}
+
+.social{
+    display: flex;
+}
+
+ .logos{
+   width: 50px;
+ }
+
+ .redes01 .fa{
+    margin: 0 15px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    font-size: 23px;
+}
+
+.redes01 .icon1{
+    background: #3b5998;
     cursor: pointer;
 }
 
-.btn:hover{
-    background-color:#1e54b8;
+.redes01 .icon2{
+    background: #00acee;
+    cursor: pointer;
 }
 
-.hola{
-    margin-top: 250px;
+.redes01 .icon3{
+    background: #ff0000;
+    cursor: pointer;
 }
+
+ 
 
 
 /* Footer */
@@ -504,8 +560,11 @@ input::placeholder, textarea::placeholder{
         flex: 1;
     }
 
+    .form{
+        width: 100%;
+        padding: 30px;
+    }
 }
-
 
 @media (max-width:600px) {
     .hero__title {
@@ -588,15 +647,5 @@ input::placeholder, textarea::placeholder{
         */
     }
 
-    body{
-        padding: 30px;
-    }
-
-    .form{
-        padding: 50px 30px;
-    }
     
-    input{
-        padding: 15px;
-    }
 }
